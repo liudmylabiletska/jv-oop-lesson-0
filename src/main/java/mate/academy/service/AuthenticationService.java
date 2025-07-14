@@ -5,8 +5,8 @@ import mate.academy.model.User;
 public class AuthenticationService {
     private final UserService userService;
 
-    public AuthenticationService(UserService userService) {
-        this.userService = userService;
+    public AuthenticationService() {
+        this.userService = new UserService();
     }
     
     /**
@@ -18,7 +18,6 @@ public class AuthenticationService {
      * @return true if user by email exists and passed password is equal to user's password.
      * Return false in any other cases.
      */
-
     public boolean login(String email, String password) {
         if (email == null || password == null || email.isBlank() || password.isBlank()) {
             return false;
