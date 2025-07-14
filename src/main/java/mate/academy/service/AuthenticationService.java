@@ -10,7 +10,7 @@ public class AuthenticationService {
     }
 
     public AuthenticationService() {
-        this.userService = new UserService();
+        this.userService = userService();
     }
     /**
      * Imagine that some user wants to login to your site.
