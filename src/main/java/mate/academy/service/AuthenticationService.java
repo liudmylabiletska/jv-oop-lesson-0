@@ -9,9 +9,6 @@ public class AuthenticationService {
         this.userService = userService;
     }
 
-    public AuthenticationService() {
-        this.userService = new UserService();
-    }
     /**
      * Imagine that some user wants to login to your site.
      * You should check if user credentials (login and password) are valid or not.
